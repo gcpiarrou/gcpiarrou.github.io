@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastón Campana Piarrou - CV</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/tailwindcss">
+        .section-headline {
+                @apply font-bold sm:text-xl uppercase tracking-widest border-green-500 border-l-8 pl-2 mb-4;
+            }
+
+            progress {
+            margin-top: 0.5rem;
+            width: 100%;
+            height: 10px;
+            margin-bottom: 0.4rem;
+            }
+
+            progress::-webkit-progress-bar {
+            border-radius: 10px;
+            background-color: #d1d5db;
+            box-shadow: 0 2px 6px #555;
+            }
+
+            progress::-webkit-progress-value {
+            border-radius: 10px 0 0 10px;
+            background-image: linear-gradient(36deg, #d1fae5, #818cf8);
+            }
+
+            .section-headline {
+            color: #10b981 !important;
+            }
+
+            #chrisko-headline::before {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            position: relative;
+            bottom: -8px;
+            content: "";
+            background-image: url("./assets/chrisko-icon.png");
+            background-position: center;
+            background-size: contain;
+            margin-right: 12px;
+            border-radius: 50%;
+            }
+    </style>
+</head>
+
+<body class="font-sans antialiased w-full">
+    <div class="container mx-auto max-w-screen-xl">
+        <main id="wrapper" class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl">
+            <div id="sidebar" class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 text-black">
+                <div class="px-2 mb-12">
+                    <img src="./assets/img/profile.jpg" alt="Profile Picture" class="rounded-full w-48 mx-auto mb-2" />
+
+                    <h1 class="text-center text-3xl font-semibold mb-2">Gastón Campana Piarrou</h1>
+                    <h2 class="text-center text-xl font-light">Fullstack Developer</h2>
+                </div>
+
+                <div class="font-light text-lg px-2 mb-12">
+                    <h2 class="text-xl font-semibold mb-4">Contacto</h2>
+                    <div class="flex items-center my-3">
+                        <i class="fab fa-google inline w-6 mr-4"></i>
+                        <a href="mailto:gaston.campana.piarrou@gmail.com">gaston.campana.piarrou</a>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fas fa-map-marker-alt inline w-6 pb-1 mr-4"></i>
+                        <div>
+                            <p>Córdoba, Argentina</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="font-light text-lg px-2 mb-12">
+                    <h2 class="text-xl font-semibold mb-4">Información personal</h2>
+                    <div class="flex items-center my-3">
+                        <i class="fas fa-birthday-cake inline w-6 mr-4"></i>
+                        <span>Nacido el 04/02/1997</span>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fas fa-university inline w-6 mr-4"></i>
+                        <span>Estudiante de Ingeniería en Sistemas</span>
+                    </div>
+                </div>
+
+                <div class="font-light text-lg px-2 mb-12">
+                    <h2 class="text-xl font-semibold mb-4">En la web</h2>
+                    <div class="flex items-center my-3">
+                        <i class="fab fa-github inline w-6 mr-4"></i>
+                        <a href="https://github.com/gcpiarrou" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="flex items-center my-3">
+                        <i class="fab fa-linkedin inline w-6 mr-4"></i>
+
+                        <a href="https://www.linkedin.com/in/gaston-campana-piarrou/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="font-light text-lg px-2 mb-12">
+                    <h2 class="text-xl font-semibold mb-4">Idiomas</h2>
+                    <h3 class="font-semibold text-base">Español</h3>
+                    <p class="text-base">Nativo</p>
+                    <h3 class="font-semibold text-base">Inglés</h3>
+                    <p>Técnico</p>
+                </div>
+
+                <div class="font-light text-lg px-2 mb-12">
+                    <h2 class="text-xl font-semibold mb-4">Habilidades y herramientas</h2>
+                    <ul class="list-none">
+                        <li>
+                            <label for="js-skill">PHP</label>
+                            <progress id="js-skill" max="100" value="70"></progress>
+                        </li>
+                        <li>
+                            <label for="vue-skill">Laravel</label>
+                            <progress id="vue-skill" max="100" value="60"></progress>
+                        </li>
+                        <li>
+                            <label for="nextjs-skill">MySQL</label>
+                            <progress id="nextjs-skill" max="100" value="65"></progress>
+                        </li>
+                        <li>
+                            <label for="react-skill">Javascript</label>
+                            <progress id="react-skill" max="100" value="75"></progress>
+                        </li>
+
+                        <li>
+                            <label for="eleventy-skill">CSS</label>
+                            <progress id="eleventy-skill" max="100" value="80"></progress>
+                        </li>
+                        <li>
+                            <label for="node-skill">Vue.js</label>
+                            <progress id="node-skill" max="100" value="75"></progress>
+                        </li>
+                        <li>
+                            <label for="css-skill">C++</label>
+                            <progress id="css-skill" max="100" value="30"></progress>
+                        </li>
+                        <li>
+                            <label for="design-skill">Java</label>
+                            <progress id="design-skill" max="100" value="30"></progress>
+                        </li>
+                        <li>
+                            <label for="design-skill">Python</label>
+                            <progress id="design-skill" max="100" value="10"></progress>
+                        </li>
+                        <li class="pt-5">
+                            <div>Herramientas</div>
+                            <p class="leading-8">
+                                <span class="rounded-xl bg-gray-300 px-3">Git</span>
+                                <span class="rounded-xl bg-gray-300 px-3">NPM</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Webpack</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Putty</span>
+                                <span class="rounded-xl bg-gray-300 px-3">FileZilla</span>
+                            </p>
+                            <div>Hostings</div>
+                            <p class="leading-8">
+                                <span class="rounded-xl bg-gray-300 px-3">Heroku</span>
+                                <span class="rounded-xl bg-gray-300 px-3">CPanel</span>
+                            </p>
+                            <div>Comunicación</div>
+                            <p class="leading-8">
+                                <span class="rounded-xl bg-gray-300 px-3">Trello</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Discord</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Slack</span>
+                                <br>
+                                <span class="rounded-xl bg-gray-300 px-3">Microsoft Teams</span>
+                            </p>
+                            <div>Office</div>
+                            <p class="leading-8">
+                                <span class="rounded-xl bg-gray-300 px-3">Microsoft 365</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Libreoffice</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Google G Suite</span>
+                            </p>
+                            <div>Diseño</div>
+                            <p class="leading-8">
+                                <span class="rounded-xl bg-gray-300 px-3">Adobe Photoshop CC 2019</span>
+                                <span class="rounded-xl bg-gray-300 px-3">Wondershare Filmora 9</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="content w-full p-12 text-justify">
+                <div id="profile" class="prose">
+                    <h2 class="section-headline">Sobre mí</h2>
+                    <p>
+                        Soy estudiante de Ingeniería en Sistemas y desarrollador web fullstack.
+                    </p>
+                    <p>
+                        He aprendido a programar de manera autodidacta y estoy siempre motivado en expandir mis
+                        horizontes diariamente para que mis proyectos tengan un mejor rendimiento y experiencia de
+                        usuario.
+                    </p>
+                    <p>
+                        Tengo una gran cantidad de conocimientos en la configuración y mantenimiento de servidores
+                        utilizando Apache, MySQL y PHP.
+                    </p>
+                    <p>
+                        A la hora de crear aplicaciones, suelo utilizar los frameworks Laravel (PHP) y Vue.js
+                        (Javascript), generando la interfaz de usuario con Vuetify (Javascript), que utiliza Material
+                        Design.
+                    </p>
+                </div>
+                <hr class="mt-8 mb-12" />
+                <div id="experience" class="prose">
+                    <h2 class="section-headline">Experiencias</h2>
+                    <div>
+                        <h3 class="font-bold text-lg">VOICENTER S.A.</h3>
+                        <div class=" italic text-xs mb-2">
+                            Córdoba, Argentina
+                        </div>
+                        <div class="ml-5">
+                            <div>
+                                <span class="italic">
+                                    06/2021 - Actualidad
+                                </span>
+                                <div class="pl-3">
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Cargo:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Desarrollador web fullstack
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Descripción:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>Análisis y mantenimiento de bases de datos.</p>
+                                            <p>Desarrollo y mantenimiento de web para tareas internas.</p>
+                                        </div>
+                                    </section>
+                                    <section class="mb-6">
+                                        <div class="italic mb-2">
+                                            Herramientas:
+                                        </div>
+                                        <div class="w-full">
+                                            <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">MySQL</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">VueJs</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">Vuetify</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">SASS</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">Webpack</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg">DASPU Obra Social Universitaria</h3>
+                        <div class="italic text-xs mb-2">
+                            Córdoba, Argentina
+                        </div>
+                        <div class="ml-5">
+                            <div>
+                                <span class="italic">
+                                    06/2020 - 06/2021
+                                </span>
+                                <div class="pl-3">
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Cargo:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Desarrollador web fullstack
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Descripción:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>Desarrollo de página web para gestión de turnos, con el fin de evitar el
+                                                hacinamiento en plena pandemia.</p>
+                                            <p>Desarrollo de web interna para los empleados.</p>
+                                            <p>Desarrollo de autogestión para afiliados.</p>
+                                        </div>
+                                    </section>
+                                    <section class="mb-6">
+                                        <div class=" italic mb-2">
+                                            Herramientas:
+                                        </div>
+                                        <div class="w-full">
+                                            <span class="rounded-xl bg-gray-300 px-3">Laravel</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">MySQL</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">VueJs</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">Bootstrap</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">SASS</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <span class="italic">
+                                    11/2018 - 05/2020
+                                </span>
+                                <div class="pl-3">
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Cargo:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Pasantía rentada
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Descripción:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>Administración de dominio.</p>
+                                            <p>Reparación y armado de computadoras.</p>
+                                            <p>Asesoría en compras de insumos electrónicos.</p>
+                                            <p>Instalación de software y periféricos.</p>
+                                            <p>Programación de página web para uso interno al área de Cómputos.</p>
+                                            <p>Manejo de tickets y coordinación con soporte de hardware de terceros.</p>
+                                        </div>
+                                    </section>
+                                    <section class="mb-6">
+                                        <div class=" italic mb-2">
+                                            Herramientas:
+                                        </div>
+                                        <div class="w-full">
+                                            <span class="rounded-xl bg-gray-300 px-3">Windows Server</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">PHP</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">MySQL</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">Javascript</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">CSS</span>
+                                            <span class="rounded-xl bg-gray-300 px-3">Bootstrap</span>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="mt-8 mb-12" />
+                <div id="educacion" class="prose">
+                    <h2 class="section-headline">Educación</h2>
+                    <div>
+                        <h3 class="font-bold text-lg">Universidad Tecnológica Nacional</h3>
+                        <div class="italic text-xs mb-2">
+                            Córdoba, Argentina. 2021 - Actualidad
+                        </div>
+                        <div class="ml-5">
+                            <div>
+                                <div>
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Título:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Ingeniería en Sistemas de Información
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Estado:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>En curso.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg">Universidad Nacional de Córdoba</h3>
+                        <div class="italic text-xs mb-2">
+                            Córdoba, Argentina. 2015 - 2020
+                        </div>
+                        <div class="ml-5">
+                            <div>
+                                <div>
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Título:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Ingeniería en Computación
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Estado:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>No completada.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-lg">Instituto León XIII</h3>
+                        <div class="italic text-xs mb-2">
+                            Córdoba, Argentina. 2009 - 2014
+                        </div>
+                        <div class="ml-5">
+                            <div>
+                                <div>
+                                    <section class="mb-1">
+                                        <div class="italic">
+                                            Título:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            Bachiller en Humanidades y Ciencias Sociales con énfasis en Letras Clásicas:
+                                            Latín y Griego.
+                                        </div>
+                                    </section>
+                                    <section class="mb-1">
+                                        <div class=" italic">
+                                            Estado:
+                                        </div>
+                                        <div class="w-full pl-4">
+                                            <p>Completada.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-8 mb-12" />
+
+                <div id="expectativas" class="prose">
+                    <h2 class="section-headline">Expectativas</h2>
+                    <div class="mb-16">
+                        <h4 id="expand-knowledge-headline">
+                            Me gustaría expandir mis habilidades y conocimientos en múltiples campos, tales como
+                        </h4>
+                        <ul>
+                            <li>Testing, utilizando frameworks como Jest o Mocha</li>
+                            <li>Frameworks de CSS, como Tailwind</li>
+                            <li>Prototipados y esquemas de página utilizando Figma o Adobe XD</li>
+                            <li>Scalable Vector Graphics</li>
+                            <li>Bases de datos no relacionales, como MongoDB, Redis o Cassandra</li>
+                            <li>Frameworks de desarrollo de aplicaciones nativas, como Electron o Flutter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="mt-12 text-center flex justify-center flex-col md:flex-row mx-12">
+        <a href="https://chrisko.io/"
+            class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0">Plantilla original creada por Chrisko</a>
+        <a href="https://tailwindcss.com/"
+            class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0">Utilizando el framework TailwindCSS</a>
+        <a href="https://fontawesome.com/"
+            class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0">Y los íconos de FontAwesome</a>
+    </footer>
+</body>
+
+</html>
